@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainCont from "./Components/MainCont";
 import Navbar from "./Components/Navbar";
 import { useState } from "react";
@@ -11,6 +11,8 @@ import "./Components/style.css";
 export default function App() {
   const [progress, setProgress] = useState(5);
   const [mode, setMode] = useState("black");
+
+
   const toggleMode = () => {
     if (mode === "white") {
       setMode("black");
@@ -18,6 +20,17 @@ export default function App() {
       setMode("white");
     }
   };
+
+  useEffect(() => {
+    if (mode !== 'black') {
+      document.body.style.background = '#000'
+    }
+    else {
+      document.body.style.background = '#fff'
+    }
+
+  }, [mode])
+
 
   return (
     <BrowserRouter>

@@ -3,7 +3,6 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
 import Iframe from 'react-iframe'
-import VerifiedIcon from '@mui/icons-material/Verified';
 
 const Singlevd = ({mode,setProgress}) => {
 

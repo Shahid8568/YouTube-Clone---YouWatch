@@ -1,117 +1,104 @@
-  .category-btn{
-    color: white;
-    border: none;
-    background: none;
-    font-size: 18px;
-    padding: 10px 5px;
-    margin-top: 1px;
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .category-btn:hover{
-    background: #917f7ca1 !important;
-  }
-  ::-webkit-scrollbar{
-    display: none;
-  }
-  .sideBar{
-    height: 92vh;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-  
+body {
+  overflow-x: hidden !important;
+}
 
-  /* Responsive Css */
+.form-check-input {
+  margin-left: 0px !important;
+}
 
-  @media  screen and (max-width: 280px) {
-    .sideBar {
-      height: 9vh !important;
-      overflow-x: scroll;
-      overflow-y: hidden;
+.category-btn {
+  color: white;
+  border: none;
+  background: none;
+  font-size: 18px;
+  padding: 10px 5px;
+  margin-top: 1px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.category-btn:hover {
+  background: #dc3545 !important;
+  color: #fff !important;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.card .card-title {
+  height: 45px !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 992px) {
+  .sideBar {
+    height: 93vh;
+    overflow: hidden;
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
   }
-  .category-btn{
+
+  .loader {
+    position: absolute;
+    height: 85%;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sideBar {
+    flex-direction: row !important;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .loader {
+    position: absolute;
+    height: 85%;
+    width: 100%
+  }
+
+}
+
+
+/* Responsive Css */
+
+@media screen and (max-width: 450px) {
+  .col-12 {
+    padding: 0px;
+  }
+
+  .category-btn {
     border-top: none !important;
-  }
-    .card {
-      width: 16rem !important;
-  }
-  .iconSearch{
-    display: none !important;
-  }
+    padding: 0px 6px;
   }
 
-  @media  screen and (max-width: 450px) {
-    .d-flex {
-      flex-direction: column !important;;
-  }
-  .iconSearch{
-    display: none !important;
-  }   
-    .sideBar {
-      height: 12vh ;
-      flex-direction: row !important;
-      overflow-x: scroll;
-      overflow-y: hidden;
-  } 
-  
-  .category-btn{
-    border-top: none !important;
-  }
-  
-  .row{
+  .row {
     display: block;
     margin: auto;
   }
-  .card{
-    width: 21rem !important;
-  }
+
   .category-btn {
     margin: 6px;
   }
-  .category-btn span{
+
+  .category-btn span {
     margin: 10px;
   }
+}
+
+@media screen and (max-width: 575px) {
+  .searchBar{
+    margin-top: 12px;
+    width: 100%;
+    padding: 0px !important;
   }
-  
-  @media  screen and (max-width: 1024px) {
-    .col-md-3 {
-      width: 50%;
-  }
-    .card{
-      width: 18rem;
-      height: 100% !important;
-    }
-  }
-  
-  @media  screen and (max-width: 1050px) {
-    .col-md-3 {
-      width: 50%;
-  }
-    .card{
-      width: 18rem;
-      height: 100% !important;
-    }
-  }
-  
-  @media  screen and (max-width: 540px) {
-    .d-flex {
-      flex-direction: column !important;;
-  }
-    .sideBar {
-      height: 12vh;
-      flex-direction: row !important;
-      overflow-x: scroll;
-      overflow-y: hidden;
-  } 
-  .category-btn{
+}
+
+@media screen and (max-width: 540px) {
+  .category-btn {
     border-top: none !important;
   }
-  .card{
-    width: 15rem !important;
-    height: 100% !important;
-  }
-  }
-  
-  
-  
+}
